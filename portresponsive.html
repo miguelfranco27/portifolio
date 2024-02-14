@@ -72,68 +72,38 @@
  <div id="projetos" class="container-fluid">
   <div class="item" id="item1">
     <button class="btn" onclick="openModal('item1')">Ver Projeto</button>
+    <p class="conteudo-modal" style="display: none;">Publicidade para marca conceitual de chocolate, criada utilizando os programas Photoshop e Adobe Illustrator.</p> <!-- Parágrafo escondido -->
   </div>
   <div class="item" id="item2">
     <button class="btn" onclick="openModal('item2')">Ver Projeto</button>
+    <p class="conteudo-modal" style="display: none;"> Design de landing page para a marca conceitual de banco digital: NEXUBANK.</p> <!-- Parágrafo escondido -->
   </div>
   <div class="item" id="item3">
     <button class="btn" onclick="openModal('item3')">Ver Projeto</button>
+    <p class="conteudo-modal" style="display: none;">Publicidade para a marca conceitual de barra de proteína POWER PRO PROTEIN, criada utilizando os programas Photoshop e Adobe Illustrator.</p> <!-- Parágrafo escondido -->
   </div>
   <div class="item" id="item4">
-    <button class="btn" onclick="openModal('item4')">Ver Projeto</button>
+    <button class="btn" onclick="openModal('item4')">Em breve</button>
+    <p class="conteudo-modal" style="display: none;">Conteúdo do Projeto 4</p> <!-- Parágrafo escondido -->
   </div>
   <div class="item" id="item5">
-    <button class="btn" onclick="openModal('item5')">Ver Projeto</button>
+    <button class="btn" onclick="openModal('item5')">Em breve</button>
+    <p class="conteudo-modal" style="display: none;">Conteúdo do Projeto 5</p> <!-- Parágrafo escondido -->
   </div>
   <div class="item" id="item6">
-    <button class="btn" onclick="openModal('item6')">Ver Projeto</button>
+    <button class="btn" onclick="openModal('item6')">Em breve</button>
+    <p class="conteudo-modal" style="display: none;">Conteúdo do Projeto 6</p> <!-- Parágrafo escondido -->
   </div>
 </div>
 
-
-<!-- The Modal -->
 <div class="modal" id="myModal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <h2 class="h2p">Projetos</h2>
+    <h2 class="titulomodal">Projeto</h2>
     <div class="imgmodal"></div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eos ex ea, consectetur mollitia la quam!</p>
+    <p id="paragrafo-modal"></p> <!-- Parágrafo apenas no modal -->
   </div>
 </div>
-
-<!-- 
-     <div id="projetos" class="projetos">
-
-      <div class="item" >
-        
-        <button class="btn" onclick="openModal()">Ver Projeto</button>
-      
-    </div>
-       
-    <div class="item" >
-      <button class="btn" onclick="openModal()">Ver Projeto</button>
-  </div>
-        
-  <div class="item" >
-    <button class="btn" onclick="openModal()">Ver Projeto</button>
-</div>
-        
-<div class="item" >
-  <button class="btn" onclick="openModal()">Ver Projeto</button>
-</div>
-<div class="item" >
-  <button class="btn" onclick="openModal()">Ver Projeto</button>
-</div>
-<div class="item">
-  <button class="btn" onclick="openModal()">Ver Projeto</button>
-</div>
-
-
-</div>
--->
-
-
-
 
 
 
@@ -198,20 +168,22 @@
 </div>
 
 
+
 <div class="email">
+
 <div class="contacts">
+
+ 
   <h1>Contato</h1>
-  <p>Telefone: 11968504974  
-  </p>
-  <p><a href="https://api.whatsapp.com/send?phone=55968504974&text=Ol%C3%A1%2C%20estou%20interessado%20em%20seus%20servi%C3%A7os" target="_blank">Enviar mensagem via WhatsApp</a>
-  </p>
+  <p>Telefone: 11968504974  </p>
+  <p><a href="https://api.whatsapp.com/send?phone=5511968504974&text=Ol%C3%A1%2C%20estou%20interessado%20em%20seus%20servi%C3%A7os" target="_blank">Enviar mensagem via WhatsApp</a></p>
+  <p><a href="mailto:francomiguel79a@gmail.com">Enviar E-mail</a></p>
    <p>E-mail: Francomiguel79a@gmail.com</p>
-
-   
-
-   <div class="imagemcontato"></div>
+    <div class="imagemcontato"></div>
 </div>
-
+<img src="img/estrela.gif" class="imgcontato" alt="...">
+</div>
+<!-- 
 <form
 action="https://formsubmit.co/francomiguel79a@gmail.com"
 method="POST"
@@ -231,6 +203,7 @@ class="form"
 />
 <button type="submit">Enviar</button>
 </form> 
+-->
     </div>
 </body>
 
@@ -294,6 +267,19 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+function openModal(itemId) {
+    var item = document.getElementById(itemId);
+    var backgroundImage = window.getComputedStyle(item, null).getPropertyValue('background-image');
+    var paragrafo = item.querySelector('.conteudo-modal').innerHTML;
     
+    document.querySelector('.imgmodal').style.backgroundImage = backgroundImage;
+    document.getElementById('paragrafo-modal').innerHTML = paragrafo; // Apenas no modal
+    document.getElementById('myModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('myModal').style.display = 'none';
+}
+
             </script>
 </html>
