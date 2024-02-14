@@ -697,11 +697,11 @@ margin-bottom: 20px;}
     .imgcontato{  
      display: none;
    }
-   
+  
   
     #item1 {
       background-image: url('gif/publiamendoim.jpg');
-      background-size: contain; /* Ajusta o tamanho da imagem para cobrir toda a div */
+      background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
       background-position: center; /* Centraliza a imagem na div */
       flex: 0 0 400px; /* Define o tamanho fixo das divs */
       background-repeat: no-repeat; 
@@ -721,7 +721,7 @@ margin-bottom: 20px;}
   
   #item3 {
     background-image: url('gif/barra\ de\ proteina\(fundo\ meia\ meio\).jpg');
-    background-size: contain; /* Ajusta o tamanho da imagem para cobrir toda a div */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem na div */
     flex: 0 0 400px; /* Define o tamanho fixo das divs */
     background-repeat: no-repeat; 
@@ -760,12 +760,13 @@ margin-bottom: 20px;}
       width: 100%;
       height: 100%;
       overflow: auto;
-      background-color: rgba(0, 0, 0, 0.5);
+  
   }
   
   .modal-content {
-      background-color: #ffffff;
+      background-color: #050202de;
   display: flex;
+  color: white;
   border-radius: 8px;
   padding: 20px;
   border: none;
@@ -778,8 +779,8 @@ margin-bottom: 20px;}
       top: 50%; /* Ajusta a posição verticalmente para o meio da tela */
       left: 50%; /* Ajusta a posição horizontalmente para o meio da tela */
       transform: translate(-50%, -50%); 
-      width: 95%;
-      height: 97%;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
      
   }
@@ -798,21 +799,23 @@ margin-bottom: 20px;}
     background-repeat: no-repeat; 
     background-image: url('img/peakpx\ \(1\).jpg');
   }
+
   .close {
-      color: #000000;
+      color: #ffffff;
       float: right;
       position: fixed; /* Torna a div fixa */
       top:3%; /* Ajusta a posição verticalmente para o meio da tela */
-      left: 94%; /* Ajusta a posição horizontalmente para o meio da tela */
+      left: 92%; /* Ajusta a posição horizontalmente para o meio da tela */
       transform: translate(-50%, -50%); 
-      font-size: 28px;
+      font-size: 30px;
       font-weight: bold;
      
   }
   
+  
   .close:hover,
   .close:focus {
-      color: rgb(0, 0, 0);
+      color: #ffffff;
       text-decoration: none;
       cursor: pointer;
   }
@@ -872,6 +875,7 @@ margin-bottom: 20px;}
   gap: 15px; 
   overflow: hidden;
   height: 1800px;
+  background-color: #ffffff;
 
 }
 
