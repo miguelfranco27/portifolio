@@ -1,13 +1,20 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
   text-align: center;
- 
+background-color: #000000;
+  color: white;
+ overflow-x: hidden;
   
 }
+#experiencia{text-align: start;
+padding: 60px;}
+#experiencia h1{
+  margin-bottom: 30px;
+}
+
 .titulomodal{
   margin-bottom: 50px;
   font-size: 25px;
@@ -21,18 +28,19 @@ body{
 a{text-align: none;}
 .ph{
   height: 95px;
-  border-bottom: solid 1px #201a33;
+  border-bottom: solid 1px #ffffff;
  
 }
+li{font-weight: bolder;}
 .pE{
   height: 80px;
-  border-bottom: solid 1px #111022;
+  border-bottom: solid 1px #ffffff;
 }
 .principal{
     display: flex;
   
    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url('img/peakpx\ \(1\).jpg');
+    background-color: black;
   
 
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
@@ -59,14 +67,13 @@ margin-top: -49px;
    }
 
    .rodape {
-    background-color: #333;
+    background-color: #191919;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    height: 70px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/peakpx\ \(1\).jpg');
+    height: 65px;
+    
   
-height: 60px;
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem na div */
    
@@ -89,8 +96,8 @@ height: 60px;
     height: 50px;
     width: 200px;
     border-radius: 10px;
-    background-color: transparent;
-    border: 2px solid #ffffff; /* Cor da borda */
+    background-color: blue;
+    border: 2px solid blue; /* Cor da borda */
     color: #ffffff; /* Cor do texto */
     padding: 10px 20px; 
    cursor: pointer;
@@ -102,30 +109,30 @@ height: 60px;
   
     .principal button:hover {
       transform: scale(1.1);
-  }
-   #projetos{
-  
-    gap: 20px;
-
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 400px);
-   
-justify-content: center
- ;padding: 20px;
-align-items: center;
-    height: 700px;
-    margin-bottom: 10px;
-
-   background-color: #F1F3F4;
-
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
-    background-position: center; /* Centraliza a imagem na div */
-   
-    background-repeat: no-repeat; 
-overflow: hidden;
+  }  /*******/
+ 
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  height: 340px;
+  padding: 20px;margin: 25px;
+  width: 100%; /* Largura total da tela */
 }
+
+.carousel {
+  display: flex; gap: 30px;
+  transition: transform 0.5s ease;
+}
+
+.project {
+  flex: 0 0 auto;
+  width: 300px; /* Largura de cada projeto */
+  height: 300px; /* Altura de cada projeto */
+  margin-right: 10px; /* Espaçamento entre projetos */
+  background-color: #ccc; /* Cor de fundo das divs */
+}
+
+
 
 .item{
     flex: 0 0 410px; /* Define o tamanho fixo das divs */
@@ -134,7 +141,7 @@ overflow: hidden;
     border-radius: 10px;
     align-items: center;
     text-align: center;
-    box-shadow:  6px 9px 12px rgba(0, 0, 9, 0.2);
+    box-shadow:  6px 9px 12px black;
     margin-right: 10px; 
     
     border:  0.1px;
@@ -189,7 +196,8 @@ overflow: hidden;
   background-image: url('');
 }
 .h1projetos{margin-bottom: 40px;}
-.h1habilidades{margin-bottom: 30px;}
+.h1habilidades{margin-bottom: 30px;
+margin-top: 30px; }
   .item:hover {
     transform: scale(1.1);
 }.btn{
@@ -213,7 +221,7 @@ overflow: hidden;
  }
 #educaçao{
     padding: 60px;
-
+background-color: #191919;
     text-align: start;
 }
 #educaçao h1,h2{
@@ -227,7 +235,7 @@ font-weight: lighter;
   padding: 60px;
 
   text-align: start; 
- 
+ background-color: #191919;
   font-size: larger;
   color:  rgb(0, 0, 0);
 
@@ -236,7 +244,7 @@ font-weight: lighter;
 
    #sobre p{
  
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   }
   
    ul{
@@ -244,7 +252,7 @@ font-weight: lighter;
    }
    #sobre h1{
     margin-bottom: 26px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
    }
 
 
@@ -286,8 +294,9 @@ font-weight: lighter;
 
 #habilidades {
  justify-content: center;
- padding: 26px;
+ padding: 30px;
 
+ background-color: rgb(0, 0, 0);
  margin-bottom: 40px;
 
     display: grid;
@@ -302,6 +311,7 @@ font-weight: lighter;
 width: 100px;
 border: none;
 cursor: pointer;
+background-color: transparent;
 height: 100px;
 transition: transform 0.3s ease;
   }
@@ -326,6 +336,67 @@ transition: transform 0.3s ease;
 /*tablet*/
   @media only screen and (min-width: 600px) and (max-width: 1023px) {
 
+    .carousel-container {
+      position: relative;
+     
+      overflow: auto;
+    
+      width: 100%; /* Largura total da tela */
+    }
+    /* Estilização da barra de rolagem horizontal */
+::-webkit-scrollbar {
+  height: 3px; /* altura da barra de rolagem */
+}
+
+/* Estilização do botão da barra de rolagem horizontal */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* cor do botão */
+  border-radius: 4px; /* pontas arredondadas */
+}
+
+/* Estilização da área ao redor do botão da barra de rolagem horizontal */
+::-webkit-scrollbar-track {
+  background-color: black; /* cor da área ao redor do botão */
+}
+
+    .carousel {
+      width: 1000px; display: none;
+      display: flex; gap: 25px;
+
+      transition: transform 0.5s ease;
+    }
+    
+    .project {
+      flex: 0 0 auto;
+      width: 300px; /* Largura de cada projeto */
+      height: 300px; /* Altura de cada projeto */
+      margin-right: 10px; /* Espaçamento entre projetos */
+      background-color: #ccc; /* Cor de fundo das divs */
+    }
+    
+  
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      top: 50%;
+      left: 2%; 
+      transform: translateY(-50%);
+      background-color: #000000e1;
+      color: #fff;
+       border: none;
+      padding: 16px 30px;
+      font-size: 30px;
+      border-radius:100%;
+    display: none;
+      cursor: pointer;
+    }
+    
+    .next-btn {
+    margin-left:1196px;
+    }
+    .next-btn img{
+    }
+    
     .modal {
       display: none;
       position: fixed;
@@ -345,7 +416,7 @@ transition: transform 0.3s ease;
  
   
   .modal-content {
-      background-color: #ffffff;
+      background-color: #250d0db2;
   display: flex;
   border-radius: 8px;
   padding: 20px;
@@ -381,8 +452,9 @@ transition: transform 0.3s ease;
    
   }
   .close {
-      color: #000000;
+      color: #ffffff;
       float: right;
+      
       position: fixed; /* Torna a div fixa */
       top:3%; /* Ajusta a posição verticalmente para o meio da tela */
       left: 96%; /* Ajusta a posição horizontalmente para o meio da tela */
@@ -394,7 +466,7 @@ transition: transform 0.3s ease;
   
   .close:hover,
   .close:focus {
-      color: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
       text-decoration: none;
       cursor: pointer;
   }
@@ -404,8 +476,7 @@ transition: transform 0.3s ease;
         flex-wrap: wrap;
         justify-content: space-around;
     } 
-  
-
+ 
     .principal h1{
       font-size: 38px;
       margin-top: 15px;
@@ -424,83 +495,15 @@ transition: transform 0.3s ease;
       height:681px;
      }
    
-     #projetos{
-      /*
-        gap: 20px;
-        background: #ffffff;
-        width: 100%;
-       overflow-y: auto;padding: 20px;
-      align-items: center;
-        height: 350px;
-        margin-bottom: 10px;
-      
-        display: flex;
-      overflow: auto;*/
-       display: grid;
-       align-items: center;
-       justify-content: center;
-        grid-template-columns: repeat(1, 1fr); /* 3 colunas com largura igual */
-        grid-auto-rows: 1fr; /* Altura automática das linhas */
-        gap: 15px; 
-        overflow: hidden;
-        height: 1800px;
-      
-      }
-      
+    
             
             .item{
               background-color: #ffffff;
-        width: 100%;
-        margin-left: 3px;
+
+
             }
             
  
-    form{
-      background-color: #ffffff;
-          border-radius: 12px;
-        
-           box-shadow:  6px 9px 12px rgba(0, 0, 9, 0.2);
-          padding: 20px;
-          gap: 18px;height: 410px;
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 40px;
-       
-       
-      }
-      form input{
-          height: 50px;
-          width: 430px;
-          outline: 0; 
-          background-color: rgb(217, 233, 247);
-          margin-bottom: 10px;
-          border:  none;
-          border-radius: 5px;
-          padding: 10px;
-      }
-      form textarea{
-          border: none;
-          width: 430px;
-          align-items: center;
-          border-radius: 5px;background-color: rgb(217, 233, 247);
-          resize: none;
-         height: 70px;
-          outline: 0;
-          margin-bottom: 15px;
-      
-      }
-      form button{
-          height: 55px;
-          width: 430px;
-          color: white;
-          outline: 0; background-color:  rgb(44, 97, 243);
-          margin-bottom: 10px;
-          border:  none;
-          cursor: pointer;
-          border-radius: 5px;
-          padding: 10px;
-         
-      }
       
       
       
@@ -509,9 +512,9 @@ transition: transform 0.3s ease;
        flex-direction: column;
         justify-content: center;
         padding: 20px;
-        
+        margin-top: 40px;
         gap: 20px;
-    background-color: #ffffff;
+    
     margin-bottom: 20px;}
     
       .contacts{
@@ -557,10 +560,61 @@ transition: transform 0.3s ease;
 
 /* Estilos para PCs */
 @media only screen and (min-width: 1024px) {
+
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%; /* Largura total da tela */
+  }
+  
+  .carousel {
+    display: flex; gap: 30px;
+    transition: transform 0.5s ease;
+  }
+  
+  .project {
+    flex: 0 0 auto;
+    width: 300px; /* Largura de cada projeto */
+    height: 300px; /* Altura de cada projeto */
+    margin-right: 10px; /* Espaçamento entre projetos */
+    background-color: #ccc; /* Cor de fundo das divs */
+  }
+  
+  .project.project1 { background-color: #ff5733; } /* Laranja */
+  .project.project2 { background-color: #33ff57; } /* Verde */
+  .project.project3 { background-color: #3357ff; } /* Azul */
+  .project.project4 { background-color: #ff33f9; } /* Rosa */
+  .project.project5 { background-color: #f9ff33; } /* Amarelo */
+  .project.project6 { background-color: #8A2BE2; } /* Azul violeta */
+  .project.project7 { background-color: #00CED1; } /* Azul turquesa */
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    left: 2%; 
+    transform: translateY(-50%);
+    background-color: #000000e1;
+    color: #fff;
+     border: none;
+    padding: 16px 30px;
+    font-size: 30px;
+    border-radius:100%;
+  
+    cursor: pointer;
+  }
+  
+  .next-btn {
+  margin-left:1196px;
+  }
+  .next-btn img{
+  }
+  
   .h2p{
     margin-bottom:60px;
   }
-.h1projetos{margin-bottom: 20px; color: #000000;}
+.h1projetos{margin-bottom: 20px; color: #ffffff;}
   .modal {
     display: none;
     position: fixed;
@@ -570,7 +624,7 @@ transition: transform 0.3s ease;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -579,6 +633,7 @@ display: flex;
 border-radius: 8px;
 padding: 20px;
 border: none;
+color: black;
 align-items: center;
 justify-content: center;
 overflow-y: auto;
@@ -588,7 +643,7 @@ flex-direction: column;
     top: 50%; /* Ajusta a posição verticalmente para o meio da tela */
     left: 50%; /* Ajusta a posição horizontalmente para o meio da tela */
     transform: translate(-50%, -50%); 
-    width:80%;
+    width:70%;
     height: 98%;
     border-radius: 15px;
     overflow: hidden;
@@ -654,13 +709,15 @@ flex-direction: column;
       flex-direction: row;
     justify-content: center;
     padding: 20px;
-    gap: 36px;
-background-color: #ffffff;
+    gap: 76px;
+    height: 400px;
+background-color: #000000;
 margin-bottom: 20px;}
 
   .contacts{
     text-align: start;
-    font-size: 20px;
+    font-size: 23px;
+    background-color: #000000;
     margin-top: -30px;
  
    
@@ -675,12 +732,11 @@ margin-bottom: 20px;}
  
   }
   .imgcontato{  
-     border-radius: 10px;
-     height: 270px;
+     border-radius:5px;
+     height: 320px;
      width: 260px;
   }
   
-
 }
 
 
@@ -692,13 +748,105 @@ margin-bottom: 20px;}
    @media only screen and (max-width: 599px)
    
 
-  
    {
+
+
+    .carousel-container {
+      position: relative;
+     
+      overflow: auto;
+    
+      width: 100%; /* Largura total da tela */
+    }
+    /* Estilização da barra de rolagem horizontal */
+::-webkit-scrollbar {
+  height: 3px; /* altura da barra de rolagem */
+}
+
+/* Estilização do botão da barra de rolagem horizontal */
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff; /* cor do botão */
+  border-radius: 4px; /* pontas arredondadas */
+}
+
+/* Estilização da área ao redor do botão da barra de rolagem horizontal */
+::-webkit-scrollbar-track {
+  background-color: black; /* cor da área ao redor do botão */
+}
+
+    .carousel {
+      width: 1000px; display: none;
+      display: flex; gap: 25px;
+
+      transition: transform 0.5s ease;
+    }
+    
+    .project {
+      flex: 0 0 auto;
+      width: 300px; /* Largura de cada projeto */
+      height: 300px; /* Altura de cada projeto */
+      margin-right: 10px; /* Espaçamento entre projetos */
+      background-color: #ccc; /* Cor de fundo das divs */
+    }
+    
+  
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      top: 50%;
+      left: 2%; 
+      transform: translateY(-50%);
+      background-color: #000000e1;
+      color: #fff;
+       border: none;
+      padding: 16px 30px;
+      font-size: 30px;
+      border-radius:100%;
+    display: none;
+      cursor: pointer;
+    }
+    
+    .next-btn {
+    margin-left:1196px;
+    }
+    .next-btn img{
+    }
+    
+    
+    
+    .item{
+        flex: 0 0 40px; /* Define o tamanho fixo das divs */
+        height:  255px;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        text-align: center;
+        box-shadow:  6px 9px 12px black;
+        margin-right: 10px; 
+        
+        border:  0.1px;
+      cursor: pointer;
+    
+      background-color: white;
+    
+        background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
+        background-position: center; /* Centraliza a imagem na div */
+       
+        background-repeat: no-repeat; 
+        justify-content: center;
+        
+    
+        transition: transform 0.3s ease;
+      }
+
+
+
+
     .imgcontato{  
      display: none;
    }
   
-  
+
     #item1 {
       background-image: url('gif/publiamendoim.jpg');
       background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
@@ -766,7 +914,7 @@ margin-bottom: 20px;}
   .modal-content {
       background-color: #050202de;
   display: flex;
-  color: white;
+  color: rgb(0, 0, 0);
   border-radius: 8px;
   padding: 20px;
   border: none;
@@ -831,13 +979,14 @@ margin-bottom: 20px;}
     }
     .pE{
       height: 95px;
-      border-bottom: solid 0.9px #000000;
+     
     }
+
     #sobre{
       padding: 20px;
       margin-bottom: 30px;
       font-size: xx-small;
-      background: linear-gradient(to top, #000000,#000000, #090B14);
+      background-color: #191919;
       font-size: larger;
        }
        #sobre p{
@@ -852,7 +1001,7 @@ margin-bottom: 20px;}
 #educaçao{
   padding: 20px;
   font-size: xx-small;
-    background-color: rgb(255, 255, 255);
+  background-color: #191919;
   font-size: larger;
 }
 #educaçao p{
@@ -875,7 +1024,7 @@ margin-bottom: 20px;}
   gap: 15px; 
   overflow: hidden;
   height: 1800px;
-  background-color: #ffffff;
+  background-color: #191919;
 
 }
 
@@ -906,15 +1055,15 @@ margin-bottom: 20px;}
         height:690px;
        }
        .img-thumbnail {
-        width: 90px;
-        border: none;
+        width: 86px;
+
         margin: 4px;
-        height: 90px;
+        height: 86px;
           }
           #habilidades{
             justify-content: center;
             padding: 26px;
-           
+          
             margin-bottom: 40px;
            
                display: grid;
@@ -936,7 +1085,7 @@ margin-bottom: 20px;}
     padding: 20px;
     gap: 40px;
     margin-top: 35px;
-background-color: #ffffff;
+
 margin-bottom: 30px;}
 
   .contacts{
@@ -945,14 +1094,22 @@ margin-bottom: 30px;}
     margin-top: -30px;
    
   }
+  .contacts a{
+    color: rgb(132, 0, 255);
+
+  }.contacts a:hover{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+  }
   .imagemcontato{
-    background:  url('img/estrela.gif') no-repeat;
+    background:  url('gif/fzUl.gif') no-repeat;
     background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a div */
     background-position: center; /* Centraliza a imagem na div */
    
     background-repeat: no-repeat; 
-    height: 260px;
-    border-radius: 10px;
+    height: 270px;
+    border-radius: 5px;
   }
   form{
 
